@@ -1,0 +1,22 @@
+{
+    "header": {
+      "school_name": "Government High School, Lambapur",
+      "login": "Login",
+      "about_us": "About Us",
+      "contact_us": "Contact Us"
+    },
+    "footer": {
+      "contact": "Contact Us",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "complaint": {
+      "title": "Title",
+      "urgency": "Urgency",
+      "category": "Category",
+      "description": "Description",
+      "submit": "Submit",
+      "complaints": "Previously Filed Complaints"
+    }
+  }
+  

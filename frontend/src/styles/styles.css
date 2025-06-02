@@ -1,0 +1,435 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  background-color: #ffe2cc;
+}
+
+/* Navigation Bar */
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3E2723; /* Deep brown color */
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif; /* Stylish font */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Logo Section */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 100px;
+  margin-right: 15px; /* Space between logo and text */
+}
+
+.navbar .logo-text {
+  color: #FFFFFF; /* White text for logo */
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.navbar .nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: #FFFFFF; /* White text for links */
+  font-size: 18px; /* Font size for links */
+  font-weight: 500; /* Semi-bold text */
+  padding: 8px 12px; /* Add padding around links */
+  border-radius: 5px; /* Rounded edges for hover effect */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover Effect */
+.navbar .nav-links a:hover {
+  background-color: #FFD700; /* Gold background on hover */
+  color: #3E2723; /* Dark brown text on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+  font-weight: bold; /* Extra emphasis */
+}
+
+/* School Name */
+.school-name {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f1300;
+  font-family: 'Georgia', serif;
+}
+
+/* Slideshow */
+/* Slideshow Container */
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Full width of the container */
+  height: 500px;
+}
+
+.slideshow .slides {
+  display: flex;
+  width: 100%; /* Adjust based on the number of images */
+  animation: slideShow 12s infinite; /* Total duration: 12 seconds (3 images x 4s) */
+}
+
+.slideshow img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Ensures the images look great without distortion */
+  flex-shrink: 0; /* Prevents images from shrinking */
+}
+
+/* Keyframes for Sliding */
+@keyframes slideShow {
+  0% {
+    transform: translateX(0); /* Show the first image */
+  }
+  33.33% {
+    transform: translateX(0); /* Pause at the first image */
+  }
+  50% {
+    transform: translateX(-100%); /* Slide to the second image */
+  }
+  66.66% {
+    transform: translateX(-100%); /* Pause at the second image */
+  }
+  83.33% {
+    transform: translateX(-200%); /* Slide to the third image */
+  }
+  100% {
+    transform: translateX(-200%); /* Pause at the third image */
+  }
+}
+
+/* Login Section */
+.login-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.login-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.login-box h2 {
+  margin: 10px 0;
+}
+
+.login-box input, .login-box select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-box button {
+  padding: 10px 20px;
+  background-color: #8B5E3C;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #714930;
+}
+
+/* About Section */
+.about-section {
+  padding: 40px;
+  background-color: #f1f1f1;
+}
+
+.about-section h2 {
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Footer */
+.footer {
+  background-color: #8B5E3C;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Complaint Page Container */
+.complaint-page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General Heading Styles */
+.complaint-page h2 {
+  text-align: center;
+  color: #3E2723;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form Styles */
+.complaint-page form {
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.complaint-page form div {
+  margin-bottom: 15px;
+}
+
+.complaint-page label {
+  display: block;
+  font-weight: bold;
+  color: #3E2723;
+  margin-bottom: 5px;
+}
+
+.complaint-page input,
+.complaint-page select,
+.complaint-page textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.complaint-page input:focus,
+.complaint-page select:focus,
+.complaint-page textarea:focus {
+  border-color: #3E2723;
+}
+
+/* Submit Button */
+.complaint-page button {
+  background-color: #3E2723;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.complaint-page button:hover {
+  background-color: #5D4037;
+  transform: scale(1.05);
+}
+
+/* Table Styles */
+.complaint-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.complaint-page thead th {
+  background-color: #3E2723;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px;
+}
+
+.complaint-page tbody td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.complaint-page tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.complaint-page tbody tr:hover {
+  background-color: #FFECB3;
+}
+
+.complaint-page .status-pending {
+  color: #F57C00; /* Orange for Pending */
+}
+
+.complaint-page .status-noted {
+  color: #0288D1; /* Blue for Noted */
+}
+
+.complaint-page .status-resolved {
+  color: #388E3C; /* Green for Resolved */
+}
+
+/* Message Styles */
+.complaint-page .message {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.complaint-page .message.success {
+  color: #388E3C;
+  background-color: #E8F5E9;
+}
+
+.complaint-page .message.error {
+  color: #D32F2F;
+  background-color: #FFEBEE;
+}
+
+/*admin page styling*/
+
+.admin-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.admin-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.chart-container {
+  margin: 20px auto;
+  width: 60%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.chart-heading {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.complaints-container {
+  margin-top: 30px;
+}
+
+.complaints-heading {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.complaints-table th,
+.complaints-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.complaints-table th {
+  background-color: #ffb5b5;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.complaints-table tr:hover {
+  background-color: #ffe5e5;
+}
+
+.no-complaints {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.status.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.status.noted {
+  color: blue;
+  font-weight: bold;
+}
+
+.status.resolved {
+  color: green;
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* for complaint details on click by admin */
+
+.detailed-complaint-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.complaint-details, .student-details {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.student-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+

@@ -1,0 +1,22 @@
+{
+    "header": {
+      "school_name": "ಸರ್ಕಾರಿ ಹೈಸ್ಕೂಲ್, ಲಾಂಬಾಪುರ",
+      "login": "ಲಾಗಿನ್",
+      "about_us": "ನಮ್ಮ ಬಗ್ಗೆ",
+      "contact_us": "ಸಂಪರ್ಕಿಸಿ"
+    },
+    "footer": {
+      "contact": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
+      "email": "ಇಮೇಲ್",
+      "phone": "ಫೋನ್"
+    },
+    "complaint": {
+      "title": "ಶೀರ್ಷಿಕೆ",
+      "urgency": "ತುರ್ತು",
+      "category": "ವರ್ಗ",
+      "description": "ವಿವರಣೆ",
+      "submit": "ಸಲ್ಲಿಸು",
+      "complaints": "ಹಿಂದೆ ಸಲ್ಲಿಸಿದ ದೂರುಗಳು"
+    }
+  }
+  
