@@ -14,7 +14,9 @@ Campus Connect is a full-stack complaint management system for students to raise
 
 campus_connect/
 ├── backend/ # Node.js server and API
+
 ├── db_scripts/ # SQL files for database setup
+
 └── frontend/ # React.js client-side app
 
 
